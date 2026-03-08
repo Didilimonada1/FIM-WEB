@@ -1,0 +1,205 @@
+:root {
+    --primary-blue: #002d62;   
+    --primary-gold: #c59b27;   
+    --light-bg: #f8f9fa;
+    --dark-text: #212529;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: var(--light-bg);
+    color: var(--dark-text);
+    line-height: 1.6;
+}
+
+.main-header {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.logo-container {
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.uas-text { color: var(--white); }
+.fim-text { color: var(--primary-gold); }
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.main-nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: var(--primary-gold);
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 45, 98, 0.85), rgba(0, 45, 98, 0.85)), url('https://via.placeholder.com/1920x600?text=Campus+FIM+UAS') center/cover;
+    color: var(--white);
+    padding: 6rem 5%;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: var(--primary-gold);
+    margin-bottom: 1.5rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 2.5rem auto;
+}
+
+.cta-button {
+    background-color: var(--primary-gold);
+    color: var(--primary-blue);
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.2s;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background-color: #e0b431;
+    transform: translateY(-2px);
+}
+
+.quick-access {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 5%;
+    flex-wrap: wrap;
+    margin-top: -3rem;
+}
+
+.access-card {
+    background-color: var(--white);
+    padding: 2rem;
+    flex: 1;
+    min-width: 280px;
+    border-radius: 8px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+    border-top: 4px solid var(--primary-blue);
+}
+
+.access-card.border-highlight {
+    border-top: 4px solid var(--primary-gold);
+}
+
+.access-card h3 {
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.access-card ul {
+    list-style: none;
+}
+
+.access-card ul li {
+    margin-bottom: 0.8rem;
+}
+
+.access-card ul li a {
+    color: #555;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.access-card ul li a:hover {
+    color: var(--primary-gold);
+    text-decoration: underline;
+}
+
+.academic-offer {
+    padding: 4rem 5%;
+    background-color: var(--white);
+}
+
+.academic-offer h2 {
+    text-align: center;
+    color: var(--primary-blue);
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.degree-card {
+    background: var(--light-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e9ecef;
+}
+
+.degree-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card-info {
+    padding: 2rem;
+}
+
+.card-info h3 {
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--primary-gold);
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.main-footer {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    text-align: center;
+    padding: 3rem 5%;
+    margin-top: 2rem;
+}
+
+.footer-info p {
+    margin-bottom: 0.5rem;
+    color: #ccc;
+}
+
+.footer-info .copyright {
+    color: var(--primary-gold);
+    margin-top: 1.5rem;
+    font-weight: 600;
+}
